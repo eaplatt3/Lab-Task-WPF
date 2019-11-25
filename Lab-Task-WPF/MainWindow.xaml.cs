@@ -59,13 +59,21 @@ namespace Lab_Task_WPF
             }
 
         }
-            
 
-       
+
+
 
         private void calculateBtn_Click(object sender, RoutedEventArgs e)
         {
+            string s1 = this.file1TextBox.Text;
+            string s2 = this.file2TextBox.Text;
+            Action a1 = delegate () { calculateFileSum(s1); };
+            Action a2 = delegate () { calculateFileSum(s2); };
 
+            Task t1 = new Task(a1);
+            Task t2 = new Task(a2);
+            t1.Start();
+            t2.Start();
         }
     }
 }
