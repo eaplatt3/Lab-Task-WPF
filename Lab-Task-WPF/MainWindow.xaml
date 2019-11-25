@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <TextBox x:Name="file1TextBox" HorizontalAlignment="Left" Height="23" Margin="118,59,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="638" Text="C:\Users\soblab\source\repos\Lab-Task-WPF\Lab-Task-WPF\bin\Debug\Data1.txt"/>
+        <Label Content="File 1" HorizontalAlignment="Left" Margin="55,57,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="file2TextBox" HorizontalAlignment="Left" Height="23" Margin="118,112,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="638" Text="C:\Users\soblab\source\repos\Lab-Task-WPF\Lab-Task-WPF\bin\Debug\Data2.txt"/>
+        <Label Content="File 2" HorizontalAlignment="Left" Margin="55,109,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="totalTextBox" HorizontalAlignment="Left" Height="23" Margin="118,155,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="638" Text="0"/>
+        <Label Content="Total" HorizontalAlignment="Left" Margin="55,152,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="calculateBtn" Content="Calculate Total" HorizontalAlignment="Left" Margin="118,211,0,0" VerticalAlignment="Top" Width="132" Height="59" Click="calculateBtn_Click"/>
+
     </Grid>
 </Window>
